@@ -1,0 +1,523 @@
+{
+  "Exposes": [
+    {
+      "Name": "GXP Temp",
+      "Thresholds": [
+        {
+          "Direction": "greater than",
+          "Name": "upper critical",
+          "Severity": 1,
+          "Value": 80
+        },
+        {
+          "Direction": "greater than",
+          "Name": "upper non critical",
+          "Severity": 0,
+          "Value": 75
+        },
+        {
+          "Direction": "less than",
+          "Name": "lower non critical",
+          "Severity": 0,
+          "Value": 5
+        },
+        {
+          "Direction": "less than",
+          "Name": "lower critical",
+          "Severity": 1,
+          "Value": 0
+        }
+      ],
+      "Type": "GxpTempSensor"
+    },
+    {
+      "Address": "0x1c",
+      "Bus": "5",
+      "Name": "Inlet PCB Temp",
+      "Name1": "System inlet Temp",
+      "Name2": "PS2 Inlet Temp",
+      "Name3": "PS1 Inlet Temp",
+      "PowerState": "On",
+      "Thresholds": [
+        {
+          "Direction": "greater than",
+	  "Index" : 1,
+          "Name": "upper critical",
+          "Severity": 1,
+          "Value": 50
+        },
+        {
+          "Direction": "greater than",
+	  "Index" : 1,
+          "Name": "upper non critical",
+          "Severity": 0,
+          "Value": 45
+        },
+        {
+          "Direction": "less than",
+	  "Index" : 1,
+          "Name": "lower non critical",
+          "Severity": 0,
+          "Value": 5
+        },
+        {
+          "Direction": "less than",
+	  "Index" : 1,
+          "Name": "lower critical",
+          "Severity": 1,
+          "Value": 0
+        },
+	{
+          "Direction": "greater than",
+          "Index" : 2,
+          "Name": "upper critical",
+          "Severity": 1,
+          "Value": 50
+        },
+        {
+          "Direction": "greater than",
+          "Index" : 2,
+          "Name": "upper non critical",
+          "Severity": 0,
+          "Value": 45
+        },
+        {
+          "Direction": "less than",
+          "Index" : 2,
+          "Name": "lower non critical",
+          "Severity": 0,
+          "Value": 5
+        },
+        {
+          "Direction": "less than",
+          "Index" : 2,
+          "Name": "lower critical",
+          "Severity": 1,
+          "Value": 0
+        },
+	{
+          "Direction": "greater than",
+          "Index" : 3,
+          "Name": "upper critical",
+          "Severity": 1,
+          "Value": 50
+        },
+        {
+          "Direction": "greater than",
+          "Index" : 3,
+          "Name": "upper non critical",
+          "Severity": 0,
+          "Value": 45
+        },
+        {
+          "Direction": "less than",
+          "Index" : 3,
+          "Name": "lower non critical",
+          "Severity": 0,
+          "Value": 5
+        },
+        {
+          "Direction": "less than",
+          "Index" : 3,
+          "Name": "lower critical",
+          "Severity": 1,
+          "Value": 0
+        },
+	{
+          "Direction": "greater than",
+          "Index" : 4,
+          "Name": "upper critical",
+          "Severity": 1,
+          "Value": 50
+        },
+        {
+          "Direction": "greater than",
+          "Index" : 4,
+          "Name": "upper non critical",
+          "Severity": 0,
+          "Value": 45
+        },
+        {
+          "Direction": "less than",
+          "Index" : 4,
+          "Name": "lower non critical",
+          "Severity": 0,
+          "Value": 5
+        },
+        {
+          "Direction": "less than",
+          "Index" : 4,
+          "Name": "lower critical",
+          "Severity": 1,
+          "Value": 0
+        }
+      ],
+      "Type": "EMC1414"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN1_FAIL",
+        "Inst": "FAN1_INST",
+        "Name": "Fan Connector 1",
+        "Pwm": 1
+      },
+      "Name": "Fan 1",
+      "Type": "GxpFan"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN2_FAIL",
+        "Inst": "FAN2_INST",
+        "Name": "Fan Connector 2",
+        "Pwm": 2
+      },
+      "Name": "Fan 2",
+      "Type": "GxpFan"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN3_FAIL",
+        "Inst": "FAN3_INST",
+        "Name": "Fan Connector 3",
+        "Pwm": 3
+      },
+      "Name": "Fan 3",
+      "Type": "GxpFan"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN4_FAIL",
+        "Inst": "FAN4_INST",
+        "Name": "Fan Connector 4",
+        "Pwm": 4
+      },
+      "Name": "Fan 4",
+      "Type": "GxpFan"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN5_FAIL",
+        "Inst": "FAN5_INST",
+        "Name": "Fan Connector 5",
+        "Pwm": 5
+      },
+      "Name": "Fan 5",
+      "Type": "GxpFan"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN6_FAIL",
+        "Inst": "FAN6_INST",
+        "Name": "Fan Connector 6",
+        "Pwm": 6
+      },
+      "Name": "Fan 6",
+      "Type": "GxpFan"
+    },
+    {
+      "Connector": {
+        "Fail": "FAN7_FAIL",
+        "Inst": "FAN7_INST",
+        "Name": "Fan Connector 7",
+        "Pwm": 7
+      },
+      "Name": "Fan 7",
+      "Type": "GxpFan"
+    },
+    {
+      "Class": "fan",
+      "FFGainCoefficient": 1,
+      "FFOffCoefficient": 0,
+      "ICoefficient": 0,
+      "ILimitMax": 0,
+      "ILimitMin": 0,
+      "Inputs": [
+        "Fan 1",
+        "Fan 2",
+        "Fan 3",
+        "Fan 4",
+        "Fan 5",
+        "Fan 6",
+        "Fan 7"
+      ],
+      "Name": "Fan 1-7",
+      "NegativeHysteresis": 0,
+      "OutLimitMax": 100,
+      "OutLimitMin": 30,
+      "Outputs": [
+        "Pwm 0",
+        "Pwm 1",
+        "Pwm 2",
+        "Pwm 3",
+        "Pwm 4",
+        "Pwm 5",
+        "Pwm 6"
+      ],
+      "PCoefficient": 0,
+      "PositiveHysteresis": 0,
+      "SlewNeg": 0,
+      "SlewPos": 0,
+      "Type": "Pid",
+      "Zones": [
+        "Zone 1"
+      ]
+    },
+    {
+      "Class": "temp",
+      "FFGainCoefficient": 0,
+      "FFOffCoefficient": 0,
+      "ICoefficient": -4.64,
+      "ILimitMax": 100,
+      "ILimitMin": 30,
+      "Inputs": [
+        "DTS CPU1"
+      ],
+      "Name": "DTS CPU1",
+      "NegativeHysteresis": 5,
+      "OutLimitMax": 100,
+      "OutLimitMin": 30,
+      "Outputs": [],
+      "PCoefficient": -0.15,
+      "PositiveHysteresis": 0,
+      "SetPoint": -25,
+      "SetPointOffset": "WarningHigh",
+      "SlewNeg": -1,
+      "SlewPos": 0,
+      "Type": "Pid",
+      "Zones": [
+        "Zone 1"
+      ]
+    },
+    {
+      "Class": "temp",
+      "FFGainCoefficient": 0,
+      "FFOffCoefficient": 0,
+      "ICoefficient": -0.2,
+      "ILimitMax": 70,
+      "ILimitMin": 10,
+      "Inputs": [
+        "Ambient Temp"
+      ],
+      "Name": "Ambient Temp",
+      "OutLimitMax": 70,
+      "OutLimitMin": 10,
+      "Outputs": [],
+      "PCoefficient": -3,
+      "SetPoint": 25,
+      "SlewNeg": -1,
+      "SlewPos": 0,
+      "Type": "Pid",
+      "Zones": [
+        "Zone 1"
+      ]
+    },
+    {
+      "FailSafePercent": 100,
+      "MinThermalOutput": 10,
+      "Name": "Zone 1",
+      "Type": "Pid.Zone"
+    },
+    {
+       "Address": "0x4f",
+       "Bus": 1,
+       "CpuID": 1,
+       "CurrScaleFactor": 1,
+       "InScaleFactor": 1,
+       "Labels": [
+         "temp1",
+         "temp2",
+         "temp3",
+         "temp4",
+         "temp5",
+         "temp6",
+         "temp7",
+         "temp8",
+         "temp9",
+         "temp10",
+         "temp11",
+         "temp12",
+         "temp13",
+         "power1",
+         "power2",
+         "power3",
+         "power4",
+         "power5",
+         "vout0",
+         "vout1",
+         "vout2",
+         "vout3",
+         "vout4",
+         "iout1",
+         "iout2",
+         "iout3",
+         "iout4",
+         "iout5"
+       ],
+       "Name": "CPU 1",
+       "PowerScaleFactor": 1000,
+       "PowerState": "On",
+       "TempScaleFactor": 1,
+       "Thresholds": [
+         {
+           "Direction": "greater than",
+           "Label": "temp1",
+           "Name": "upper critical",
+           "Severity": 1,
+           "Value": 105
+         },
+         {
+           "Direction": "greater than",
+           "Label": "temp2",
+           "Name": "upper critical",
+           "Severity": 1,
+           "Value": 105
+         },
+         {
+            "Direction": "greater than",
+            "Label": "temp3",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 105
+         },
+         {
+            "Direction": "greater than",
+            "Label": "temp4",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 105
+         },
+         {
+            "Direction": "greater than",
+            "Label": "power3",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 79.95
+          },
+          {
+            "Direction": "greater than",
+            "Label": "power4",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 79.95
+          },
+          {
+            "Direction": "greater than",
+            "Label": "vout0",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 2.0
+          },
+          {
+            "Direction": "less than",
+            "Label": "vout0",
+            "Name": "lower critical",
+            "Severity": 1,
+            "Value": 0.72
+          },
+          {
+            "Direction": "greater than",
+            "Label": "vout1",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 0.96
+          },
+          {
+            "Direction": "less than",
+            "Label": "vout1",
+            "Name": "lower critical",
+            "Severity": 1,
+            "Value": 0.56
+          },
+          {	
+            "Direction": "greater than",
+            "Label": "vout2",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 1.26
+          },
+          {
+            "Direction": "less than",
+            "Label": "vout2",
+            "Name": "lower critical",
+            "Severity": 1,
+            "Value": 1.141
+          },
+          {
+            "Direction": "greater than",
+            "Label": "vout3",
+            "Name": "upper critical",
+            "Severity": 1,
+            "Value": 1.26
+          },
+          {
+            "Direction": "less than",
+            "Label": "vout3",
+            "Name": "lower critical",
+            "Severity": 1,
+            "Value": 1.141
+          }
+       ],
+       "Type": "smpro_hwmon",
+       "iout1_Name": "S0_Core_VRD_Curr",
+       "iout2_Name": "S0_SOC_VRD_Curr",
+       "iout3_Name": "S0_DIMM_VR1_Curr",
+       "iout4_Name": "S0_DIMM_VR2_Curr",
+       "iout5_Name": "S0_RCA_VRD_Curr",
+       "power1_AddAssoc": "false",
+       "power1_Name": "S0_Core_VRD_Pwr",
+       "power2_AddAssoc": "false",
+       "power2_Name": "S0_SOC_VRD_Pwr",
+       "power3_Name": "S0_DIMM_VR1_Pwr",
+       "power4_Name": "S0_DIMM_VR2_Pwr",
+       "power5_Name": "S0_RCA_VR_Pwr",
+       "temp10_AddAssoc": "false",
+       "temp10_Name": "S0_DIMM_CH5_Temp",
+       "temp11_AddAssoc": "false",
+       "temp11_Name": "S0_DIMM_CH6_Temp",
+       "temp12_AddAssoc": "false",
+       "temp12_Name": "S0_DIMM_CH7_Temp",
+       "temp13_Name": "S0_RCA_VR_Temp",
+       "temp1_Name": "S0_SOC_Temp",
+       "temp2_Name": "S0_SOC_VRD_Temp",
+       "temp3_Name": "S0_DIMM_VRD_Temp",
+       "temp4_Name": "S0_Core_VRD_Temp",
+       "temp5_AddAssoc": "false",
+       "temp5_Name": "S0_DIMM_CH0_Temp",
+       "temp6_AddAssoc": "false",
+       "temp6_Name": "S0_DIMM_CH1_Temp",
+       "temp7_AddAssoc": "false",
+       "temp7_Name": "S0_DIMM_CH2_Temp",
+       "temp8_AddAssoc": "false",
+       "temp8_Name": "S0_DIMM_CH3_Temp",
+       "temp9_AddAssoc": "false",
+       "temp9_Name": "S0_DIMM_CH4_Temp",
+       "vout0_Name": "S0_CPU_VCORE",
+       "vout1_Name": "S0_SOC_Volt",
+       "vout2_Name": "S0_DIMM_VR1_Volt",
+       "vout3_Name": "S0_DIMM_VR2_Volt",
+       "vout4_Name": "S0_RCA_VR_Volt"
+     }
+  ],
+  "Name": "server",
+  "Probe": "xyz.openbmc_project.FruDevice({'SERVER_ID': '0x0250'})",
+  "Type": "Chassis",
+  "xyz.openbmc_project.Inventory.Decorator.Asset": {
+    "Manufacturer": "$PRODUCT_MANUFACTURER",
+    "Model": "ProLiant RL300 Gen11",
+    "PartNumber": "$PCA_PART_NUMBER",
+    "SerialNumber": "$PCA_SERIAL_NUMBER"
+  },
+  "xyz.openbmc_project.Inventory.Decorator.AssetTag": {
+    "AssetTag": "HPE-OBMC-001"
+  },
+  "xyz.openbmc_project.Inventory.Item": {
+    "PrettyName": "ProLiant RL300 Gen11"
+  },
+  "xyz.openbmc_project.Inventory.Item.Board.Motherboard": {
+    "ProductId": "$SERVER_ID"
+  },
+  "xyz.openbmc_project.Inventory.Item.System": {
+    "PartNumber": "$PRODUCT_PART_NUMBER",
+    "SerialNumber": "$PRODUCT_SERIAL_NUMBER"
+  }
+}

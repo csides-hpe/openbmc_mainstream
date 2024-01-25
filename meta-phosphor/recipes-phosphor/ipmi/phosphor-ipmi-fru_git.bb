@@ -38,7 +38,7 @@ do_install:append() {
 
 RDEPENDS:${PN} += "bash"
 
-FILES:${PN} += "${bindir}/of-name-to-eeprom.sh"
+#FILES:${PN} += "${bindir}/of-name-to-eeprom.sh"
 FILES:${PN}:append = " ${libdir}/ipmid-providers/lib*${SOLIBS}"
 FILES:${PN}:append = " ${libdir}/host-ipmid/lib*${SOLIBS}"
 FILES:${PN}-dev:append = " ${libdir}/ipmid-providers/lib*${SOLIBSDEV} ${libdir}/ipmid-providers/*.la"

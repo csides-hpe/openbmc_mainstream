@@ -1,0 +1,53 @@
+{
+  "sensors": [
+  ],
+  "zones": [
+    {
+      "failsafePercent": 90,
+      "id": 1,
+      "minThermalOutput": 0,
+      "pids": [
+        {
+          "inputs": [
+          ],
+          "name": "Fan1-6",
+          "pid": {
+            "feedFwdGainCoeff": 0,
+            "feedFwdOffsetCoeff": 0,
+            "integralCoeff": 2,
+            "integralLimit_max": 0,
+            "integralLimit_min": 0,
+            "outLim_max": 90,
+            "outLim_min": 35,
+            "proportionalCoeff": 10,
+            "samplePeriod": 0.1,
+            "slewNeg": -5,
+            "slewPos": 5
+          },
+          "setpoint": 128,
+          "type": "fan"
+        },
+        {
+          "inputs": [
+          ],
+          "name": "temppid0",
+          "pid": {
+            "feedFwdGainCoeff": 0,
+            "feedFwdOffsetCoeff": 0,
+            "integralCoeff": -2,
+            "integralLimit_max": 0,
+            "integralLimit_min": 0,
+            "outLim_max": 255,
+            "outLim_min": 0,
+            "proportionalCoeff": -60,
+            "samplePeriod": 1,
+            "slewNeg": -10,
+            "slewPos": 10
+          },
+          "setpoint": 43,
+          "type": "temp"
+        }
+      ]
+    }
+  ]
+}

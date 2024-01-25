@@ -1,0 +1,57 @@
+recipes-hpe/host/host-boot-enable/host-boot-enable.sh:devmem 0xc00000af 8 9
+recipes-kernel/linux/linux-obmc/defconfig:CONFIG_DEBUG_UART_PHYS=0xC00000F0
+recipes-kernel/linux/linux-obmc/gxp.dts:    timer0: timer@c0000080 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0000080 0x1>, <0xc0000094 0x01>, <0xc0000088 0x08>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    watchdog: watchdog@c0000090 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0000090 0x02>, <0xc0000096 0x01>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    uartc: serial@c00000f0 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc00000f0 0x8>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    uarta: serial@c00000e0 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc00000e0 0x8>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    uartb: serial@c00000e8 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc00000e8 0x8>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    spifi0: spifi@c0000200 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0000200 0x80>, <0xc000c000 0x100>, <0xf8000000 0x8000000>;
+recipes-kernel/linux/linux-obmc/gxp.dts:            reg = <0x80000 0x4c0000>;
+recipes-kernel/linux/linux-obmc/gxp.dts:            reg = <0x540000 0x16c0000>;
+recipes-kernel/linux/linux-obmc/gxp.dts:          u-boot2@1c00000 {
+recipes-kernel/linux/linux-obmc/gxp.dts:            reg = <0x1c00000 0x60000>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    srom@80fc0000 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0x80fc0000 0x100>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2cg: i2cg@c00000f8 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc00000f8 0x08>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c0: i2c@c0002000 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002000 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c1: i2c@c0002100 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002100 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c2: i2c@c0002200 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002200 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c3: i2c@c0002300 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002300 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c4: i2c@c0002400 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002400 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c5: i2c@c0002500 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002500 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c6: i2c@c0002600 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002600 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c7: i2c@c0002700 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002700 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c8: i2c@c0002800 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002800 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    i2c9: i2c@c0002900 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0002900 0x70>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    mdio0: mdio@c0004080 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0004080 0x10>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    mdio1: mdio@c0005080 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0005080 0x10>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    umac0: umac@c0004000 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0004000 0x80>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    umac1: umac@c0005000 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0005000 0x80>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    thumbnail: thumbnail@c0000500 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0000500 0x20>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    fanctrl: fanctrl@c1000c00 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc1000c00 0x200>;
+recipes-kernel/linux/linux-obmc/gxp.dts:    coretemp: coretemp@c0000130 {
+recipes-kernel/linux/linux-obmc/gxp.dts:      reg = <0xc0000130 0x8>;
+recipes-phosphor/console/obmc-console/80-gxp-obmc-console-uart.rules:SUBSYSTEM=="tty", ATTRS{iomem_base}=="0xC00000E0", ENV{SYSTEMD_WANTS}="obmc-console@ttyVUART0" SYMLINK+="ttyS1", TAG+="systemd"

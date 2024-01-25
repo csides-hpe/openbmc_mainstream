@@ -7,9 +7,9 @@ PE = "1"
 
 # We use the revision in order to avoid having to fetch it from the
 # repo during parse
-SRCREV = "7e035b9bf331426919aa993a6bb1de3c837e5d3c"
-UBRANCH = "v2020.10-gxp-openbmc"
-SRC_URI = "git://github.com/HewlettPackard/gxp-uboot.git;branch=${UBRANCH};protocol=https"
+SRCREV = "dfbf9f857270b518162ac009a3daeacc3cc8de83"
+UBRANCH = "add_v_eeprom"
+SRC_URI = "git://git@github.hpe.com/hpe-iop/gxp-uboot.git;branch=${UBRANCH};protocol=ssh"
 
 S = "${WORKDIR}/git"
 
