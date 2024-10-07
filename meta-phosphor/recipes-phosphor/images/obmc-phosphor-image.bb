@@ -21,6 +21,7 @@ IMAGE_FEATURES += " \
         obmc-fan-mgmt \
         obmc-flash-mgmt \
         obmc-fru-ipmi \
+        obmc-devtree-vpd \
         obmc-health-monitor \
         obmc-host-ctl \
         obmc-host-ipmi \

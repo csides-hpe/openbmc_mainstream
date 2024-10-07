@@ -14,6 +14,7 @@ PACKAGES = " \
         ${PN}-devtools \
         ${PN}-fan-control \
         ${PN}-fru-ipmi \
+        ${PN}-devtree-vpd \
         ${PN}-health-monitor \
         ${PN}-host-state-mgmt \
         ${PN}-ikvm \
@@ -96,6 +97,11 @@ RDEPENDS:${PN}-fan-control = " \
 SUMMARY:${PN}-fru-ipmi = "Support for EEPROMS with IPMI FRU"
 RDEPENDS:${PN}-fru-ipmi = " \
         fru-device \
+        "
+
+SUMMARY:${PN}-devtree-vpd = "Support for VPD collection from device-tree"
+RDEPENDS:${PN}-devtree-vpd = " \
+        devicetree-vpd \
         "
 
 SUMMARY:${PN}-health-monitor = "Support for health monitoring"
